@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.a3a49569f95dfa16ffb3fe361e7e5a01.js"
+  "/precache-manifest.9cac15be0b729b80f932d166768c75e8.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "ImageWeb"});

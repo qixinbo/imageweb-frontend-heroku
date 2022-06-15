@@ -134,7 +134,7 @@ export default {
   mounted(){
 
     axios
-      .get('http://localhost:5000/menu/')
+      .get('https://imagepy-api.herokuapp.com/menu/')
       .then(response => {
         this.menu = response.data
       })
@@ -225,7 +225,7 @@ export default {
 
       axios({
               method: 'POST',
-              url: 'http://localhost:5000/img/',
+              url: 'https://imagepy-api.herokuapp.com/img/',
               data: data,
               headers: {
                   'Content-Type': 'multipart/form-data'
@@ -277,7 +277,7 @@ export default {
       this.currentKey = key
 
       axios
-        .get('http://localhost:5000/plugins/', {
+        .get('https://imagepy-api.herokuapp.com/plugins/', {
           params:{id: key}
         })
         .then(response => 
